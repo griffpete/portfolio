@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-rows: repeat(48, minmax(0px, 100px));
+    grid-template-columns: minmax(0px,1fr) repeat(6, minmax(0px, 200px)) minmax(0px,1fr);
+    background-color:#262626;
+}
+
+#nav {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    position: sticky;
+    top: 0;
+    height: 5rem;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+
+}
+
+nav ul li {
+    padding-left: 50px; 
+    padding-top: 1rem;
+    font-family:sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+main {
+    grid-column: 2 / -2;
+    grid-row: 1 / -1;
+    height: 4800px;
+}
+
+#sandhero {
+    background-image: url(images/sandhero.jpg);
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 1 / -1;
+    grid-row: 1 / 10;
+}
+
+#name {
+    grid-column: 2 / -2;
+    grid-row: 3 / 4;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 3rem;
+    font-family:sans-serif;
+    padding: 100px;
+}
+
+
+
+#about {
+    text-align: left;
+    color: #D9D9D9;
+    font-size: 4rem;
+    font-family:sans-serif;
+    padding-top: 3.5rem;
+    padding-left: 1rem;
+    grid-row: 10 / 11;
+    grid-column: 2 / -2;
+}
+
+.greenbar {
+    background-color: #115959;
+    border-radius: 1rem;
+    height: 2rem;
+    width: 20rem;
+}
+
+#green1 {
+    grid-row: 11 / 12;
+    grid-column: 2 / 4;
+    margin-top: 2rem;
+}
+
+.greybar {
+    background-color: #595959;
+    border-radius: 1rem;
+    height: auto;
+    width: auto;
+    padding-bottom: 8rem;
+    position: relative;
+
+}
+
+#grey1 {
+    grid-row: 12 / 13;
+    grid-column: 2 / -2;
+}
+
+#grey2 {
+    grid-row: 14 / 15;
+    grid-column: 2 / -2;
+}
+
+#grey3 {
+    grid-row: 16 / 17;
+    grid-column: 2 / -2;
+}
+
+.icon {
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+#computericon {
+    height: 110px;
+}
+
+div h3 {
+    text-align: left;
+    color: #D9D9D9;
+    font-family:sans-serif;
+    margin-left: 10rem;
+    position: absolute;
+    top: 3rem;
+}
