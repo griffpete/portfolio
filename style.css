@@ -7,7 +7,7 @@
 #wrapper {
     display: grid;
     grid-template-rows: repeat(48, minmax(0px, 100px));
-    grid-template-columns: minmax(0px,1fr) repeat(6, minmax(0px, 200px)) minmax(0px,1fr);
+    grid-template-columns: minmax(10px,1fr) repeat(6, minmax(0px, 200px)) minmax(10px,1fr);
     background-color:#262626;
 }
 
@@ -83,11 +83,12 @@ main {
     border-radius: 1rem;
     height: 2rem;
     width: 20rem;
+    grid-column: 2 / 4;
+
 }
 
 #green1 {
     grid-row: 11 / 12;
-    grid-column: 2 / 4;
     margin-top: 2rem;
 }
 
@@ -132,4 +133,49 @@ div h3 {
     margin-left: 10rem;
     position: absolute;
     top: 3rem;
+}
+
+@media screen and (max-width: 992px) {
+    #wrapper {
+        grid-template-columns: minmax(0px,1fr) repeat(6, minmax(0px, 100px)) minmax(0px,1fr);
+    }
+    div h3 {
+        top: 1rem;
+        font-size: large;
+    }
+    #nav {
+        position: relative;
+    }
+    #sandhero {
+        background-image: url(images/sandhero_comp.jpg);
+    }
+}
+
+@media screen and (max-width: 769px) {
+    #wrapper {
+        grid-template-columns: 100%;
+    }
+    div h3 {
+        font-size: small;
+        margin-right: 1rem;
+    }
+    .greybar {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    #about {
+        margin-left: 1rem;
+        font-size: 3rem;
+    }
+    .greenbar {
+        grid-column: 2 / -2;
+        margin-left: 1rem;
+    }
+    #name {
+        font-size: 2rem;
+
+    }
+    nav ul li {
+        padding-left: 20px;
+    }
 }
