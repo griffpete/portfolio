@@ -27,7 +27,7 @@
         </nav>
         <main></main>
         <div id = 'sandhero'></div>
-        <section id = 'name'>
+        <section id = 'my_name'>
             <h2>Griffin Peterson</h2>
             <h4>Software Engineer</h4>
         </section>
@@ -52,32 +52,48 @@
 
         <div id = 'circ1' class = 'circle'></div>
         <h2 id = 'project1-title' class= 'projects'>Project 1</h2>
-        <h3 id = 'project1-txt' class= 'project-txt'>Description about project1</h3>
+        <h3 id = 'project1-txt' class= 'project-txt'>Description about project 1</h3>
 
         <div id = 'circ2' class = 'circle'></div>
         <h2 id = 'project2-title' class= 'projects'>Project 2</h2>
-        <h3 id = 'project2-txt' class= 'project-txt'>Description about project2</h3>
+        <h3 id = 'project2-txt' class= 'project-txt'>Description about project 2</h3>
 
         <div id = 'circ3' class = 'circle'></div>
         <h2 id = 'project3-title' class= 'projects'>Project 3</h2>
-        <h3 id = 'project3-txt' class= 'project-txt'>Description about project3</h3>
-        <nav id = 'nav2'>
-            <ul>
-                <li>
-                    <a href = "" class="circle">About</a>
-                </li>
-                <li>
-                    <a href = "">Projects</a>
-                </li>
-                <li>
-                    <a>Links</a>
-                </li>
-                <li>
-                    <a>Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <h3 id = 'project3-txt' class= 'project-txt'>Description about project 3</h3>
+
+        <section id = 'link_section'>
+            <a href = "Griff Resume.pdf" class="link" id = 'resume'></a>
+            <a href = "https://github.com/griffpete" target="_blank" class="link" id = 'github'></a>
+            <a href = "https://twitter.com/Griff_Codes" target="_blank" class="link" id = 'twitter'></a>
+        </section>
+
+        <h1 id = 'contact'>Contact</h1>
+        <div class = 'greenbar' id = 'green3'></div>
         
+
+        <form action="submit-form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+          
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br>
+          
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+          
+            <input type="submit" value="Submit">
+          </form>
+          
+
+
     </div>
 </body>
 </html>
