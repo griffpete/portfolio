@@ -18,10 +18,10 @@
                     <a href = "#projects">Projects</a>
                 </li>
                 <li>
-                    <a>Links</a>
+                    <a href = "#links">Links</a>
                 </li>
                 <li>
-                    <a>Contact</a>
+                    <a href = "#contact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -35,15 +35,15 @@
         <div class = 'greenbar' id = 'green1'></div>
         <div class = 'greybar' id = 'grey1'>
             <img src="images/bookicon.png" alt="book" class = 'icon'>
-            <h3 class = 'description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+            <h3 class = 'description'>Current student at Utah Tech University, Majoring in Software Engineering</h3>
         </div>
         <div class = 'greybar' id = 'grey2'>
             <img src="images/workingicon.png" alt="book" class = 'icon'>
-            <h3 class = 'description'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h3>
+            <h3 class = 'description'>I worked as a level 6 cook at In-N-Out Burger, gaining valuable job experience in the fast-paced food industry.</h3>
         </div>
         <div class = 'greybar' id = 'grey3'>
             <img src="images/computericon.png" alt="book" class = 'icon' id = 'computericon'>
-            <h3 class = 'description'>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+            <h3 class = 'description'>Experience in: HTML, CSS, Javascript, Python, C / C++ / C#, Linux</h3>
         </div>
         <div id = 'mounthero'></div>
         <h1 id = 'projects'>Projects</h1>
@@ -52,25 +52,26 @@
 
         <div id = 'circ1' class = 'circle'></div>
         <h2 id = 'project1-title' class= 'projects'>Project 1</h2>
-        <h3 id = 'project1-txt' class= 'project-txt'>Description about project 1</h3>
+        <h3 id = 'project1-txt' class= 'project-txt'>Work in progress</h3>
 
         <div id = 'circ2' class = 'circle'></div>
         <h2 id = 'project2-title' class= 'projects'>Project 2</h2>
-        <h3 id = 'project2-txt' class= 'project-txt'>Description about project 2</h3>
+        <h3 id = 'project2-txt' class= 'project-txt'>Work in progress</h3>
 
         <div id = 'circ3' class = 'circle'></div>
         <h2 id = 'project3-title' class= 'projects'>Project 3</h2>
-        <h3 id = 'project3-txt' class= 'project-txt'>Description about project 3</h3>
+        <h3 id = 'project3-txt' class= 'project-txt'>Work in progress</h3>
 
+        <div id = 'links'></div>
         <section id = 'link_section'>
-            <a href = "Griff Resume.pdf" class="link" id = 'resume'></a>
+            <a href = "Griff Resume.pdf" class="link" target="_blank" rel = 'noopener noreferrer' id = 'resume'></a>
             <a href = "https://github.com/griffpete" target="_blank" class="link" id = 'github'></a>
             <a href = "https://twitter.com/Griff_Codes" target="_blank" class="link" id = 'twitter'></a>
         </section>
 
         <h1 id = 'contact'>Contact</h1>
         <div class = 'greenbar' id = 'green3'></div>
-        
+        <div id = 'greyback2'></div>
 
         <form action="submit-form.php" method="POST">
             <label for="name">Name:</label>
@@ -89,7 +90,7 @@
             <textarea id="message" name="message" required></textarea>
             <br>
           
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" id = 'button'>
           </form>
           
 
