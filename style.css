@@ -335,7 +335,8 @@ form {
 }
 
 input {
-    margin: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
 }
 
 form label {
@@ -401,7 +402,59 @@ textarea {
     #sandhero {
         background-image: url(images/sandhero_comp.jpg);
     }
+    #greyback {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+    #circ2 {
+        grid-column: 2;
+        margin-left: 2rem;
+        margin-top: 3rem;
+    }
+    #project2-title {
+        margin-right: 5rem;
+        text-align: left;
+    }
     
+    #project2-txt {
+        margin-right: 5rem;
+        text-align: left;
+    }
+    #project1-title {
+        grid-column: 3 / 7;
+    }
+    #project3-title {
+        grid-column: 3 / 7;
+    }
+   
+    
+    #link_section {
+        grid-column: 1 / -1;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    .link {
+        width: 100px;
+        height: 100px;
+    }
+    #resume {
+        background-size: 75px;
+    }
+    #github {
+        background-size: 75px;
+    }
+    #twitter {
+        background-size: 75px;
+    }
+    #greyback2 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        grid-row: 35 / 41;
+    }
 }
 
 @media screen and (max-width: 769px) {
@@ -430,5 +483,54 @@ textarea {
     }
     nav ul li {
         padding-left: 20px;
+    }
+    #circ1 {
+        grid-column: 1 / -1;
+    }
+    #circ2 {
+        grid-column: 1 / -1;
+    }
+    #circ3 {
+        grid-column: 1 / -1;
+    }
+    #project1-title {
+        grid-column: 1 / -1;
+        margin-left: 14rem;
+    }
+    #project1-txt {
+        grid-column: 1 / -1;
+        margin-left: 14rem;
+    }
+    #project2-title {
+        grid-column: 1 / -1;
+        margin-left: 14rem;
+    }
+    #project2-txt {
+        grid-column: 1 / -1;
+        margin-left: 14rem;
+    }
+    #project3-title {
+        grid-column: 1 / -1;
+        margin-left: 14rem;
+    }
+    #project3-txt {
+        grid-column: 1 / -1;
+        margin-left: 14rem;
+    }
+    #link_section {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    #name {
+        width: 200px;
+    }
+    #email {
+        width: 200px;
+    }
+    #phone {
+        width: 300px;
+    }
+    #message {
+        width: 300px;
     }
 }
